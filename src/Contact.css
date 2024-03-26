@@ -1,0 +1,41 @@
+/* Contact component text */
+.contact-container {
+    padding: 20px; /* Add padding to the contact container */
+    text-align: center; /* Center-align the content */
+}
+
+.contact-title {
+    font-size: 3.5rem; /* Adjusted font size for the title */
+    margin-bottom: 20px; /* Add some bottom margin */
+    color: #edebe5; /* Title color */
+}
+
+.contact-text {
+    font-size: 1.8rem; /* Adjusted font size for the text */
+    margin-bottom: 30px; /* Add some bottom margin */
+    color: #e4dbdb; /* Text color */
+}
+
+.contact-link {
+    color: hsl(0, 25%, 94%); /* Original color */
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.contact-link:hover {
+    color: #d8dfe6; /* Darker shade of blue on hover */
+}
+
+.contact-info {
+    color: #8dc98d; /* New color (shade of green) */
+    text-decoration: none;
+    display: inline-block; /* Display contact info inline */
+    margin-bottom: 30px; /* Add some bottom margin */
+    transition: transform 0.3s ease; /* Smooth transform transition on hover */
+    font-size: 2rem;
+}
+
+.hover-effect:hover .contact-info {
+    transform: translateX(5px); /* Reduced translation on hover */
+}

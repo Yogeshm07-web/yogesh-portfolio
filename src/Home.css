@@ -1,0 +1,15 @@
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-content h1,
+.home-content h2,
+.home-content p {
+    margin: 100px 0;
+    color: hsla(30, 44%, 96%, 0.701); /* Set text color to a lighter gold */
+    text-shadow: 1px 1px 0px #b9ae70, 2px 2px 0px #000000, 3px 3px 0px #ffd700; /* Add a gold shadow effect */
+}
