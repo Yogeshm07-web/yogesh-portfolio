@@ -20,7 +20,7 @@ const Background = styled.section`
     align-items: center;
     justify-content: center;
     gap: 2em;
-    padding: 2em;
+    padding: 2em 0 0; /* Adjusted padding-top to move content closer to the navbar */
 
     background-image: url('https://th.bing.com/th/id/OIG4.vQKsJ1tS3PPtyzchlS9X?pid=ImgGn');
     background-size: cover;
