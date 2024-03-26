@@ -13,29 +13,39 @@ const ContactContainer = styled.div`
     text-align: center;
 `;
 
+const Title = styled.h1`
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 20px;
+`;
+
+const Description = styled.p`
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 30px;
+`;
+
 const ContactLink = styled(Link)`
-    color: hsla(30, 44%, 96%, 0.701); /* Set text color to a lighter gold */
+    color: #ffe600;
     text-decoration: none;
-    font-size: 3.5rem;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    display: block;
     &:hover {
         text-decoration: underline;
     }
 `;
 
-const HoverEffect = styled.div`
-    &:hover {
-        transform: translateY(-1px); /* Move the element up on hover */
-    }
-`;
-
 const ContactInfo = styled.a`
-    color: hsla(30, 44%, 96%, 0.701); /* Set text color to a lighter gold */
+    color: #ffe600;
     text-decoration: none;
+    font-size: 2em;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     transition: transform 0.3s ease;
-    font-size: 4em;
-    text-shadow: 1px 1px 0px #b9ae70, 2px 2px 0px #000000, 3px 3px 0px #ffd700; /* Add a gold shadow effect */
+    &:hover {
+        transform: translateY(-3px); /* Add a slight hover effect */
+    }
 `;
 
 // Contact component
@@ -43,20 +53,12 @@ const Contact = () => {
     return (
         <Background>
             <ContactContainer>
-                <h1>Contact Me</h1>
-                <p>You can contact me via email, phone, Slack, or LinkedIn.</p>
+                <Title>Contact Me</Title>
+                <Description>You can reach out to me via email, phone, Slack, or LinkedIn.</Description>
                 <ContactLink to="/contact">Contact Form</ContactLink>
-                <>
-                    <HoverEffect>
-                        <ContactInfo href={`mailto:yogeshmunsa07@gmail.com`}>Email: yogeshmunsa07@gmail.com</ContactInfo>
-                    </HoverEffect>
-                    <HoverEffect>
-                        <ContactInfo href={LINKEDIN} target="_blank" rel="noopener noreferrer">LinkedIn: yogesh-munsah</ContactInfo>
-                    </HoverEffect>
-                    <HoverEffect>
-                        <ContactInfo href={`tel:+23058664804`}>Phone Number: +23058664804</ContactInfo>
-                    </HoverEffect>
-                </>
+                <ContactInfo href={`mailto:yogeshmunsa07@gmail.com`}>Email: yogeshmunsa07@gmail.com</ContactInfo>
+                <ContactInfo href={LINKEDIN} target="_blank" rel="noopener noreferrer">LinkedIn: yogesh-munsah</ContactInfo>
+                <ContactInfo href={`tel:+23058664804`}>Phone Number: +23058664804</ContactInfo>
             </ContactContainer>
         </Background>
     );
